@@ -1,0 +1,137 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:background="#8080CBC4"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true">
+    </android.support.design.widget.AppBarLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF3E0"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+
+        android:layout_marginTop="70dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="#FFF3E0"
+            xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                custom:pager_animation="Accordion"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation_span="1100"
+                android:layout_height="250dp"/>
+
+            <!--<com.daimajia.slider.library.Indicators.PagerIndicator-->
+            <!--android:id="@+id/custom_indicator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--custom:selected_color="#0095BF"-->
+            <!--custom:unselected_color="#55333333"-->
+            <!--custom:shape="oval"-->
+            <!--custom:selected_padding_left="5dp"-->
+            <!--custom:selected_padding_right="5dp"-->
+            <!--custom:unselected_padding_left="5dp"-->
+            <!--custom:unselected_padding_right="5dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--custom:selected_width="6dp"-->
+            <!--custom:selected_height="6dp"-->
+            <!--custom:unselected_width="6dp"-->
+            <!--custom:unselected_height="6dp"-->
+            <!--android:layout_marginBottom="20dp" />-->
+
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator2"
+                style="@style/AndroidImageSlider_Corner_Oval_Orange"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp" />
+        </RelativeLayout>
+
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="About us:-"
+                    android:id="@+id/textView"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:paddingTop="4dp"
+                    android:padding="6dp"
+                    android:paddingBottom="4dp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/aboutUs1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="16dp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="6dp"
+                    android:text="@string/aboutUs2"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:id="@+id/privacy"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:onClick="forPrivacy"/>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

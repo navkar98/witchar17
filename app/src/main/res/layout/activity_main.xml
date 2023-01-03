@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mzule.fantasyslide.FantasyDrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+            <com.github.mzule.fantasyslide.SideBar
+                android:id="@+id/leftSideBar"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                app:maxTranslationX="50dp">
+
+                <LinearLayout
+                    android:id="@+id/userInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onClick"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/logo"
+                        app:civ_border_color="@color/menu_text_color"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WITchar17"
+                        android:textColor="@color/menu_text_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_event"
+                    android:text="Events" />
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_event"
+                    android:text="Registration" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_layers_white_24dp"
+                    android:text="Out Of Box" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_lightbulb_outline_white_24dp"
+                    android:text="Online Quiz" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_initiative"
+                    android:text="Initiatives" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_schedule"
+                    android:text="Schedule" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_accomodation"
+                    android:text="Accommodation" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@mipmap/ic_developers"
+                    android:text="Credits" />
+
+
+
+            </com.github.mzule.fantasyslide.SideBar>
+
+    </com.github.mzule.fantasyslide.FantasyDrawerLayout>
+
+
+</RelativeLayout>

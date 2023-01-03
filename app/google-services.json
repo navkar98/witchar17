@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "928216682144",
+    "firebase_url": "https://witchar17-b1f5a.firebaseio.com",
+    "project_id": "witchar17-b1f5a",
+    "storage_bucket": "witchar17-b1f5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928216682144:android:3387dce84c2bcae7",
+        "android_client_info": {
+          "package_name": "com.wit.walchand.witchar17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928216682144-7786vf4606f3k9ijcn66eqrkrsvelahq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wit.walchand.witchar17",
+            "certificate_hash": "84a2330db83a0a491b104d9894c38722240ee44b"
+          }
+        },
+        {
+          "client_id": "928216682144-1nl17png1ce61pcak70sjgbejbitvd8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnaG77uSIu0tZkqLfdpogIGCYPYB9Phek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928216682144-1nl17png1ce61pcak70sjgbejbitvd8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

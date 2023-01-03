@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first"
+        android:icon="@mipmap/ic_info_white_36dp"
+        android:title="Basic Info"/>
+    <item
+        android:id="@+id/second"
+        android:icon="@mipmap/ic_rules"
+        android:title="Rules"/>
+    <item
+        android:id="@+id/third"
+        android:icon="@mipmap/ic_contact"
+        android:title="Contact"/>
+
+
+
+</menu>
